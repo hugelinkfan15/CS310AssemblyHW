@@ -8,7 +8,9 @@ ExitProcess PROTO, dwExitCode:DWORD
 .data
 
 .code
-main PROC
+
+
+
 INVOKE ExitProcess, 0
 main ENDP
 
