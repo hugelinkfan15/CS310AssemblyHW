@@ -34,6 +34,10 @@ shr ax, 1
 and ah, 01111111b
 mov year, ah
 
+mov edx, OFFSET day
+mov edx, OFFSET month
+mov edx, OFFSET year
+
 INVOKE ExitProcess, 0
 main ENDP
 
