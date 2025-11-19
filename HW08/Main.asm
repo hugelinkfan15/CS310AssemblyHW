@@ -30,7 +30,7 @@ SumArray PROC
 	
 	L1:
 		add eax, [esi]
-		add esi, TYPE [esi]
+		add esi, 4
 		loop L1
 
 	mov esp,ebp
