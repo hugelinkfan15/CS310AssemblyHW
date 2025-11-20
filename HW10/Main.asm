@@ -12,11 +12,13 @@ var3 DWORD 20
 
 .code
 main PROC
+
 push var1
 push var2
 push var3
 CALL SPA
-  INVOKE ExitProcess, 0
+
+INVOKE ExitProcess, 0
 main ENDP
 
 SPA PROC
@@ -49,7 +51,7 @@ SPA PROC
 
 	mov esp, ebp
 	pop ebp
-	ret 12
+	ret 12		; clear passed parameters from stack
 SPA ENDP
 
 END main   ;specify the program's entry point
